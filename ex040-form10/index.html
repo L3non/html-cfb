@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+
+   <style>
+      .broken{display: block;}
+      .spacing{margin-bottom: 15px;}
+      .spacing-t{margin-top: 15px;}
+
+      form{
+         background-color: #eee;
+
+         border: 1px solid #000;
+         border-radius: 15px;
+         padding: 10px;
+
+      }
+   </style>
+</head>
+<body>
+   <form action="#" name="f-register" method="get">
+      <input list="f-transportes" name="f-color">
+      <datalist id="f-colors">
+         <option value="red">Red</option>
+         <option value="green">Green</option>
+         <option value="blue">Blue</option>
+         <option value="yellow">Yellow</option>
+         <option value="white">White</option>
+         <option value="beige">Beige</option>
+      </datalist>
+
+      <datalist id="f-transportes">
+         <option value="01">Car</option>
+         <option value="02">Plane</option>
+         <option value="03">Ship</option>
+         <option value="04">Motorbike</option>
+      </datalist>
+
+      <input class="spacing-t broken" type="submit" name="f-submit" value="Submit">
+   </form>
+</body>
+</html>

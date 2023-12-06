@@ -1,0 +1,162 @@
+*{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   overflow-x: hidden;
+}
+
+.border0{border: none;}
+.border1{border: 1px solid #000;}
+.border2{border: 1px solid #f00;}
+
+.flex{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+}
+
+html{scroll-behavior: smooth;}
+section, footer{padding: 60px 0; }
+section:nth-child(even){background-color: #3c4f60;}
+
+article{
+   width: 100%;
+   text-align: center;
+}
+
+section{
+   width: 100%;
+   height: 500px;
+}
+
+/* HEADER */
+
+header{
+   background-color: #fff;
+   padding: 15px 0;
+   width: 100%;
+   position: fixed;
+   z-index: 999;
+}
+
+header > nav > ul{
+   list-style: none;
+   text-align: center;
+}
+
+header > nav > ul > li{display: inline;}
+
+header > nav > ul > li > a{
+   color: #888;
+   text-decoration: none;
+   text-transform: uppercase;
+   font-family: Arial, Helvetica, sans-serif;
+   padding: 2px 10px;
+   font-size: 1.2em;
+   display: inline-block;
+}
+
+header > nav > ul > li > a:hover{
+   color: #b6dbf1;
+}
+
+/* END HEADER */
+
+/* BANNER */
+
+.banner{display: flex;}
+.banner > img{width: 100%;}
+
+/* END BANNER */
+
+/* COURSES */
+
+.coursesContainer{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   align-items: center;
+}
+
+.mini{
+   cursor: pointer;
+   width: 49%;
+   padding: 5px;
+}
+
+.modalWindow{
+   overflow: hidden;
+   background-color: rgba(0, 0, 0, 0.8);
+   width: 100%;
+   height: 100%;
+   padding-top: 100px;
+   position: fixed;
+   top: 0;
+   left: 0;
+   z-index: 1000;
+}
+
+.showModalWindow{display: block;}
+.hidesModalWindow{display: none;}
+
+.closeModal{
+   cursor: pointer;
+   color: #fff;
+   font-weight: bold;
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 40px;
+   position: absolute;
+   top: 15px;
+   right: 35px;
+}
+
+.modalImg{
+   margin: 0 auto;
+   width: 100%;
+   max-width: 800px;
+   display: block;
+}
+
+.modalTxt{
+   color: #ccc;
+   margin: 0 auto;
+   width: 80%;
+   height: 150px;
+   padding: 10px 0;
+   max-width: 700px;
+   display: block;
+   text-align: center;
+}
+
+/* END COURSES */
+
+/* PARALLAX */
+
+.parallax{
+   background-attachment: fixed;
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center center;
+}
+
+.p1{background-image: url(wallpaper.jpg);}
+.p2{background-image: url(6327211.png);}
+
+/* END PARALLAX */
+
+/* ANIMATIONS */
+
+[data-animation]{
+   opacity: 0;
+   transition: 0.8s;
+}
+
+[data-animation="left"]{transform: translate3d(-50px, 0, 0);} /*X Y Z*/
+[data-animation="center"]{transform: translate3d(0, 50px, 0);} /*X Y Z*/
+[data-animation="right"]{transform: translate3d(50px, 0, 0);} /*X Y Z*/
+
+[data-animation].animation{
+   opacity: 1;
+   transform: translate3d(0, 0, 0);
+}
+/* END ANIMATIONS */

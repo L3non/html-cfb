@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+
+   <style>
+
+      *{
+         padding: 0;
+         box-sizing: border-box;
+      }
+
+      body{
+         margin: 0;
+      }
+
+      .main{
+         border: 1px dotted #f00;
+         width: 960px;
+
+         margin: 0 auto;
+      }
+
+      #header,#body,#footer{
+         border: 1px dotted #aaa;
+      }
+
+      #header{
+         width: 100%;
+         height: 100px;
+
+         position: absolute;
+      }
+
+      #body{
+         width: 100%;
+         height: 570px;
+
+         position: absolute;
+         top: 100px;
+      }
+
+      #footer{
+         background-color: #000;
+         color: #fff;
+
+         width: 100%;
+         height: 90px;
+
+         position: absolute;
+         top: 670px;
+      }
+
+      #box1,#box2,#box3{
+         width: 150px;
+         height: 70px;
+      }
+
+      #box1{
+         background-color: #f00;
+         color: #fff;
+
+         border: 1px solid #000;
+
+         position: absolute;
+         top: 0;
+         left: 0;
+      }
+
+      #box2{
+         background-color: #0f0;
+         color: #fff;
+
+         border: 1px solid #000;
+
+         position: relative;
+         top: 0;
+         left: 0;
+      }
+
+      #box3{
+         background-color: #00f;
+         color: #fff;
+
+         border: 1px solid #000;
+
+         position: fixed;
+         bottom: 0;
+         left: 0;
+         z-index: 1;
+      }
+   </style>
+</head>
+<body>
+   <div id="header">
+      <div class="main">
+         <h1>CFB Courses</h1>
+      </div>
+   </div>
+
+   <div id="body">
+      <div class="main">
+
+         <div id="box1">
+            <h3>box 1</h3>
+         </div>
+
+         <div id="box2">
+            <h3>box 2</h3>
+         </div>
+
+         <div id="box3">
+            <h3>box 3</h3>
+         </div>
+
+         <p>In this class we will learn to manipulate div, using position, top, left, width, height.</p>
+
+         <p>If you are not yet subscribed to our channel, subscribe and click the bell</p>
+
+         <p>Follow us on our social networks, addresses in the video description</p>
+      </div>
+   </div>
+
+   <div id="footer">
+      <div class="main">
+         <p>www.youtube.com/cfbcursos</p>
+         <p>cfbcursos.com</p>
+      </div>
+   </div>
+</body>
+</html>

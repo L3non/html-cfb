@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+
+   <style>
+      .broken{display: block;}
+      .spacing{margin-bottom: 15px;}
+      .spacing-t{margin-top: 15px;}
+
+      form{
+         background-color: #eee;
+
+         border: 1px solid #000;
+         border-radius: 15px;
+         padding: 10px;
+      }
+   </style>
+</head>
+<body>
+   <form action="#" name="f-register" method="get">
+      <label>Username:</label>
+      <input class="spacing broken" type="text" name="f-username" maxlength="20" size="25">
+      <label>Password:</label>
+      <input class="spacing broken" type="password" name="f-password" maxlength="10" size="15">
+      <label class="broken">Favorite sports:</label>
+      <input type="checkbox" name="f-soc">Soccer
+      <input type="checkbox" name="f-bas">Basket
+      <input type="checkbox" name="f-swi">Swimming
+      <label class="spacing-t broken">Have car?</label>
+      <input type="radio" name="f-car" value="yes" checked>Yes
+      <input type="radio" name="f-car" value="no">No
+      <input class="spacing-t broken" type="submit" name="f-join" value="Join">
+   </form>
+</body>
+</html>

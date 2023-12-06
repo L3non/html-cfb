@@ -1,0 +1,40 @@
+.menu{
+   background-color: #444;
+   display: flex;
+   position: fixed;
+   top: 0;
+   left: -50px;
+   transition: all 0.5s ease;
+}
+
+.menu > div > a{
+   color: #fff;
+   padding: 15px;
+   font-size: 1.1em;
+   display: block;
+   text-align: center;
+   transition: all 0.3s ease;
+}
+
+.menu > div > a:hover{
+   background-color: #ff0;
+}
+
+.active{
+   background-color: #ff0;
+}
+
+.btnMenu{
+   cursor: pointer;
+}
+
+.bar{
+   background-color: #fff;
+   width: 25px;
+   height: 3px;
+   margin: 5px 10px;
+}
+
+.menuOpen{
+   left: 0;
+}

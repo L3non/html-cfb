@@ -1,0 +1,43 @@
+body{font-family: Verdana, Geneva, Tahoma, sans-serif;}
+
+.hamburgerMenu{
+   background-color: #111;
+   overflow-x: hidden;
+   width: 0;
+   height: 100%;
+   padding-top: 60px;
+   position: fixed;
+   z-index: 1;
+   top: 0;
+   left: 0;
+   transition: 0.5s;
+}
+
+.hamburgerMenu > a{
+   text-decoration: none;
+   color: #888;
+   padding: 8px 8px 8px 32px;
+   font-size: 25px;
+   display: block;
+   transition: 0.3s;
+}
+
+.hamburgerMenu > a:hover{color: #fff;}
+
+.hamburgerMenu > .btnClose{
+   margin-left: 50px;
+   font-size: 38px;
+   position: absolute;
+   top: 0;
+   right: 25px;
+}
+
+#main{
+   padding: 16px;
+   transition: margin-left 0.5s;
+}
+
+@media screen and(max-heigh: 450px){
+   .hamburgerMenu{padding-top: 15px;}
+   .hamburgerMenu > a{font-size: 18px;}
+}

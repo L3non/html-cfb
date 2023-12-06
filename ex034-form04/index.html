@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   
+   <style>
+      .broken{display: block;}
+      .spacing-t{margin-top: 15px;}
+
+      form{
+         background-color: #eee;
+
+         border: 1px solid black;
+         border-radius: 15px;
+         padding: 10px;
+      }
+   </style>
+</head>
+<body>
+   <form action="#" name="f-register" method="get">
+      <label class="broken">Hour:</label>
+      <input type="time" name="f-hour" min="09:00" max="17:00">
+
+      <label class="broken spacing-t">Date:</label>
+      <input type="date" name="f-date" min="2019-06-03" max="2019-06-08">
+
+      <label class="broken spacing-t">Date and Hour:</label>
+      <input type="datetime-local" name="f-date-hour" min="2019-06-03" max="2019-06-08">
+
+      <input class="spacing-t broken" type="submit" name="f-submit" value="Submit">
+   </form>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+
+   <style>
+      .broken{display: block;}
+      .spacing{margin-bottom: 15px;}
+      .spacing-t{margin-top: 15px;}
+
+      form{
+         background-color: #eee;
+
+         border: 1px solid #000;
+         border-radius: 15px;
+         padding: 10px;
+
+      }
+   </style>
+</head>
+<body>
+   <form action="#" name="f-register" method="get">
+      <fieldset>
+         <legend>Data 1:</legend>
+         <label for="f-name">Name:</label>
+         <input type="text" name="f-name" id="if-name" class="broken"><br>
+
+         <label for="f-tel">Phone:</label>
+         <input type="tel" name="f-tel" id="if-tel" class="broken"><br>
+      </fieldset>
+      <br>
+      <fieldset>
+         <legend>Data 2:</legend>
+         <label for="f-car">Have car?</label><br>
+         <input type="radio" name="f-car" id="if-car" value="y">YES<br>
+         <input type="radio" name="f-car" id="if-car" value="n">NO<br>
+
+         <label for="f-car">Have own house?</label><br>
+         <input type="radio" name="f-house" id="if-house" value="y">YES<br>
+         <input type="radio" name="f-house" id="if-house" value="n">NO<br>
+      </fieldset>
+
+      <input type="submit" value="Submit" class="spacing-t broken" name="f-submit">
+   </form>
+</body>
+</html>

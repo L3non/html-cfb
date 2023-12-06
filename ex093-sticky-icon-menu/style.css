@@ -1,0 +1,24 @@
+.menu{
+   background-color: #444;
+   width: 50px;
+   position: fixed;
+   top: 0;
+   left: 0;
+}
+
+.menu > a{
+   color: white;
+   padding: 15px;
+   font-size: 1.1em;
+   display: block;
+   text-align: center;
+   transition: all 0.3s ease;
+}
+
+.menu > a:hover{
+   background-color: #ff0;
+}
+
+.active{
+   background-color: #ff0;
+}

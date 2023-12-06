@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- MAIN -->
+
+   <nav class="tabs">
+      <button id="first" onclick="openTab(event,'c#')" data-Tabsbtn>C#</button>
+      <button onclick="openTab(event,'html')" data-Tabsbtn>HTML</button>
+      <button onclick="openTab(event,'arduino')" data-Tabsbtn>Arduino</button>
+   </nav>
+
+   <article class="tabs-content" id="c#">
+      <span class="close-tab" onclick="this.parentElement.style.display='none'">X</span>
+      <h3>C#</h3>
+      <p>Complete C# Course</p>
+   </article>
+
+   <article class="tabs-content" id="html">
+      <span class="close-tab" onclick="this.parentElement.style.display='none'">X</span>
+      <h3>HTML</h3>
+      <p>Complete HTML Course</p>
+   </article>
+
+   <article class="tabs-content" id="arduino">
+      <span class="close-tab" onclick="this.parentElement.style.display='none'">X</span>
+      <h3>Arduino</h3>
+      <p>Complete Arduino Course</p>
+   </article>
+
+<!-- END MAIN -->
+
+<!-- SCRIPTS -->
+
+   <script src="scripts.js"></script>
+
+<!-- END SCRIPTS -->
+</body>
+</html>

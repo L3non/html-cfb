@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+
+   <style>
+      .broken{display: block;}
+      .spacing-t{margin-top: 15px;}
+
+      form{
+         background-color: #eee;
+
+         border: 1px solid black;
+         border-radius: 15px;
+         padding: 10px;
+      }
+
+      .img{width: 300px; height: 200px;}
+   </style>
+</head>
+<body>
+   <form action="#" name="f-register" method="get">
+      <label class="broken">Password:</label>
+      <input type="password" name="f-password" pattern="[a-zA-Z0-9]{5}">
+      <label class="broken">Phone:</label>
+      <input type="tel" name="t-tel" pattern="\([0-9]{2}\)[9]{1}[0-9]{4}-[0-9]{4}" placeholder="(xx)9xxxx-xxxx">
+      <label class="broken spacing-t">Choose a number:</label>
+      <input type="number" name="f-number" step="2" min="0" max="10">
+      <label class="broken spacing-t">Search:</label>
+      <input type="search" name="f-search">
+
+      <input class="broken spacing-t" type="submit" value="Submit">
+   </form>
+</body>
+</html>

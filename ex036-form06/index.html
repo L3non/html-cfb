@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+
+   <style>
+      .broken{display: block;}
+      .spacing-t{margin-top: 15px;}
+
+      form{
+         background-color: #eee;
+
+         border: 1px solid black;
+         border-radius: 15px;
+         padding: 10px;
+      }
+
+      .img{width: 300px; height: 200px;}
+   </style>
+</head>
+<body>
+   <form action="#" name="f-register" method="get">
+      <label class="broken">Select a color:</label>
+      <input type="color" name="f-color">
+      <label class="broken spacing-t">Email:</label>
+      <input type="email" name="f-email">
+      <input class="broken spacing-t img" type="image" name="f-send" src="notoriousbig_01.jpg" alt="big papa">
+
+      <input class="spacing-t broken" type="submit" name="f-submit" value="Submit">
+   </form>
+</body>
+</html>

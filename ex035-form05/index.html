@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+
+   <style>
+      .broken{display: block;}
+      .spacing-t{margin-top: 15px;}
+
+      form{
+         background-color: #eee;
+
+         border: 1px solid black;
+         border-radius: 15px;
+         padding: 10px;
+      }
+   </style>
+</head>
+<body>
+   <form name="f-register" action="#" method="get">
+      <label class="broken">Month:</label>
+      <input type="month" name="f-month">
+      <label class="broken spacing-t">Week:</label>
+      <input type="week" name="f-week">
+      <input type="hidden" name="channel" value="cfbcourses">
+      <input type="hidden" name="course" value="html5">
+      <input class="broken spacing-t" type="submit" value="Submit" name="f-submit">
+   </form>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+
+   <style>
+      iframe{
+         border: none;
+         width: 500px;
+         height: 300px;
+      }
+
+      #banner{
+         border: none;
+         width: 500px;
+         height: 100px;
+      }
+   </style>
+</head>
+<body>
+   <iframe src="" id="banner" name="banner"></iframe><br>
+   <a href="class33.html" target="main">Class 33</a>
+   <a href="http://cfbcursos.com.br" target="main">Channel Website</a>
+   <a href="http://w3.org" target="main">W3</a>
+
+   <iframe src="" name="main"></iframe>
+
+   <script>
+      function tradeBanner(){
+         var num=Math.floor(Math.random()*2);
+         var imgs=['wallpaper.jpg','6327211.png']
+         document.getElementById("banner").src=imgs[num];
+      }
+      function start(){
+         tradeBanner();
+      }
+      window.addEventListener("load",start);
+   </script>
+</body>
+</html>

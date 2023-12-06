@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+
+   <style>
+      dialog{
+         box-shadow: 0 0 10px black;
+         border-radius: 7px;
+
+         border: 0;
+         padding: 0;
+
+         flex-direction: column;
+      }
+
+      .dialog-title{
+         border-top-left-radius: inherit;
+         border-top-right-radius: inherit;
+         background-color: #eee;
+
+         border-bottom: 1px solid #aaa;
+         padding: 7px;
+         height: 40px;
+
+         display: flex;
+         align-items: center;
+      }
+
+      .dialog-body{
+         background-color: #fff;
+
+         padding: 7px;
+      }
+
+      .dialog-footer{
+         border-bottom-left-radius: inherit;
+         border-bottom-right-radius: inherit;
+         background-color: #fff;
+
+         border-top: 1px solid #aaa;
+         padding: 7px;
+      }
+
+      #btn-close{
+         border-radius: 7px;
+         cursor: pointer;
+
+         outline: none;
+         border: none;
+         padding: 7px;
+      }
+
+      #btn-close:hover{
+         background-color: #eee;
+      }
+   </style>
+</head>
+<body>
+
+   <button id="btn-dialog" onclick="controlDialog('HTML Course','Complete and Professional HTML Course')">Open</button>
+
+   <button id="btn-dialog" onclick="controlDialog('Test','Test')">Open 2</button>
+
+   <dialog id="d1">
+      <div class="dialog-title">
+         <h3 id="title">Dialog box</h3>
+      </div>
+
+      <div class="dialog-body">
+         <p>Native HTML5 dialog box</p>
+         <p id="msg1">CFB Courses / Complete and Professional HTML Course</p>
+      </div>
+
+      <div class="dialog-footer">
+         <buton id="btn-close" onclick="closeDialog()">Close</buton>
+      </div>
+   </dialog>
+
+   <script>
+
+      function closeDialog(){
+         document.getElementById("btn-dialog").innerHTML="Open";
+         document.getElementById("d1").removeAttribute("open");
+      }
+
+      function openDialog(){
+         document.getElementById("btn-dialog").innerHTML="Close";
+         document.getElementById("d1").setAttribute("open","");
+      }
+
+      function controlDialog(title,msg){
+         if(document.getElementById("d1").open){
+            closeDialog();
+         }else{
+            openDialog();
+            document.getElementById("title").innerHTML=title;
+            document.getElementById("msg1").innerHTML=msg;
+         }
+      }
+   </script>
+</body>
+</html>

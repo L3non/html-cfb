@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Layout</title>
+
+   <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+<!-- HEADER -->
+
+   <header>
+      <nav>
+         <ul>
+            <li><a href="#banner">home</a></li>
+            <li><a href="#about">about</a></li>
+            <li><a href="#courses">courses</a></li>
+            <li><a href="#channel">channel</a></li>
+            <li><a href="#contact">contact</a></li>
+         </ul>
+      </nav>
+   </header>
+
+<!-- END HEADER-->
+
+<!-- BANNER -->
+
+   <section id="banner" class="banner">
+      <img src="a.png" alt="Logo">
+   </section>
+
+<!-- END BANNER  -->
+
+<!-- ABOUT -->
+
+   <section id="about" class="flex">
+      <article class="border0" data-animation="left">
+         About the channel
+      </article>
+
+      <article class="border0" data-animation="right">
+         About me
+      </article>
+   </section>
+
+<!-- END ABOUT -->
+
+<!-- COURSES -->
+
+   <section id="courses" class="flex">
+      <article class="border0 coursesContainer" data-animation="left">
+         <img src="ab.jpg" alt="Image 01" class="mini" onclick="clickModal(this)">
+         <img src="ab.jpg" alt="Image 02" class="mini" onclick="clickModal(this)">
+         <img src="ab.jpg" alt="Image 03" class="mini" onclick="clickModal(this)">
+         <img src="ab.jpg" alt="Image 04" class="mini" onclick="clickModal(this)">
+      </article>
+
+      <article class="border0 coursesContainer" data-animation="center">
+         <img src="ab.jpg" alt="Image 05" class="mini" onclick="clickModal(this)">
+         <img src="ab.jpg" alt="Image 06" class="mini" onclick="clickModal(this)">
+         <img src="ab.jpg" alt="Image 07" class="mini" onclick="clickModal(this)">
+         <img src="ab.jpg" alt="Image 08" class="mini" onclick="clickModal(this)">
+      </article>
+
+      <article class="border0 coursesContainer" data-animation="right">
+         <img src="ab.jpg" alt="Image 09" class="mini" onclick="clickModal(this)">
+         <img src="ab.jpg" alt="Image 10" class="mini" onclick="clickModal(this)">
+         <img src="ab.jpg" alt="Image 11" class="mini" onclick="clickModal(this)">
+         <img src="ab.jpg" alt="Image 12" class="mini" onclick="clickModal(this)">
+      </article>
+   </section>
+
+   <div id="modalWindow" class="modalWindow hidesModalWindow">
+      <span id="btnClose" class="closeModal">x</span>
+      <img src="" alt="" id="modalImg" class="modalImg">
+      <div id="modalTxt" class="modalTxt"></div>
+   </div>
+
+<!-- END COURSES -->
+
+<!-- PARALLAX 1 -->
+
+   <section class="parallax p1">
+
+   </section>
+
+<!-- END PARALLAX 1 -->
+
+<!-- CHANNEL -->
+
+   <section id="channel" class="flex">
+      <article class="border0" data-animation="left">
+         Image channel link
+      </article>
+
+      <article class="border0" data-animation="right">
+         Channel link
+      </article>
+   </section>
+
+<!-- END CHANNEL -->
+
+<!-- PARALLAX 2 -->
+
+   <section class="parallax p2">
+
+   </section>
+
+<!-- END PARALLAX 2 -->
+
+<!-- CONTACT -->
+
+   <section id="contact" class="flex">
+      <article class="border0" data-animation="left">
+         Contact left
+      </article>
+
+      <article class="border0" data-animation="center">
+         Contact center
+      </article>
+
+      <article class="border0" data-animation="right">
+         Contact right
+      </article>
+   </section>
+
+<!-- END CONTACT -->
+
+<!-- FOOTER -->
+
+   <footer>
+
+   </footer>
+
+<!-- END FOOTER -->
+
+<!-- SCRIPTS -->
+
+   <script src="scripts.js" type="text/javascript">
+
+   </script>
+
+<!-- END SCRIPTS -->
+</body>
+</html>
